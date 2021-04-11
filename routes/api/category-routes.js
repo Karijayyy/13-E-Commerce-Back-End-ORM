@@ -14,9 +14,8 @@ router.get('/', async (req, res) => {
   }
 });
 
-// finds just 1 category 
+// finds just 1 category if it's good then it'll work if not it'll send an error
 router.get('/:id', async (req, res) => {
-        // this includes products associated to the category
   try {
     const singleCategory = await Category.findByPk(req.params.id, {
       include: [{ model: Product }],
@@ -31,7 +30,7 @@ router.get('/:id', async (req, res) => {
   }
 });
 
-// creates a new category
+// creates a new category if it's good then it'll work if not it'll send an error
 router.post('/', async (req, res) => {
   try {
     const categoryData = await Category.create(req.body);
@@ -41,7 +40,7 @@ router.post('/', async (req, res) => {
   }
 });
 
-// updates an existing category
+// updates an existing category if it's good then it'll work if not it'll send an error
 router.put('/:id', async (req, res) => {
   try {
     const category = await Category.update(
@@ -59,7 +58,7 @@ router.put('/:id', async (req, res) => {
   };
 });
 
-// deletes a category 
+// deletes a category if it's good then it'll work if not it'll send an error
 router.delete('/:id', async (req, res) => {
   try {
     const deleteCategory = await Category.destroy({
