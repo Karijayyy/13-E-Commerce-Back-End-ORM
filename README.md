@@ -18,7 +18,7 @@ test in Insomnia
 email kari@maeandmariemarketing.com
 
   ## Video walk through
-https://drive.google.com/file/d/1osQ2GeIuYZxXVOlWTHKez3jiubJW8eTL/view
+https://drive.google.com/file/d/1rPpIMw6iAjefWdM3D0akm9xMg3s5CSq7/view?usp=sharing
 
   ## Resources
   https://www.npmjs.com/
