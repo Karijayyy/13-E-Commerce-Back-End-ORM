@@ -1,5 +1,3 @@
-// centralized grading said my node_modules were pushed up? But they're in this folder so how??
-
 node_modules
 .env
 LICENSE
